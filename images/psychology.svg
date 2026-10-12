@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <rect width="600" height="400" fill="#edf7f0"/>
+  <circle cx="195" cy="150" r="52" fill="#bfe0c3"/>
+  <circle cx="330" cy="150" r="52" fill="#bfe0c3"/>
+  <path d="M120 290 C160 210, 240 210, 260 290 L260 290 C285 240, 363 240, 405 290 L480 290 L480 330 L120 330 Z" fill="#7cb58b" opacity="0.9"/>
+  <path d="M160 150 C180 220, 210 240, 240 240" stroke="#3b7d5f" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M440 150 C420 220, 390 240, 360 240" stroke="#3b7d5f" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <text x="300" y="348" text-anchor="middle" font-size="26" font-family="Arial, Helvetica, sans-serif" fill="#2b7a4a" font-weight="700">Психологическая помощь</text>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <defs>
+    <linearGradient id="g1" x1="0" x2="1">
+      <stop offset="0%" stop-color="#dfeefb"/>
+      <stop offset="100%" stop-color="#b9d9ec"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="#edf6ff"/>
+  <rect x="80" y="70" width="440" height="260" rx="18" fill="url(#g1)" stroke="#8bb9d9" stroke-width="3"/>
+  <rect x="120" y="110" width="140" height="120" rx="8" fill="#ffffff" opacity="0.9"/>
+  <rect x="290" y="110" width="180" height="18" rx="9" fill="#5d9ec9" opacity="0.8"/>
+  <rect x="290" y="145" width="150" height="18" rx="9" fill="#8fc2de" opacity="0.9"/>
+  <rect x="290" y="180" width="170" height="18" rx="9" fill="#8fc2de" opacity="0.8"/>
+  <rect x="120" y="255" width="350" height="18" rx="9" fill="#5d9ec9" opacity="0.7"/>
+  <text x="300" y="348" text-anchor="middle" font-size="26" font-family="Arial, Helvetica, sans-serif" fill="#1d69a6" font-weight="700">Кабинет консультации</text>
+</svg>
