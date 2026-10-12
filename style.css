@@ -6,150 +6,238 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #eaf1f6;
-  color: #333;
-  line-height: 1.5;
-  font-size: 14px;
+  background-color: #eeddc5;
+  color: #2b1810;
+  line-height: 1.55;
+  font-size: 13.5px;
 }
 
-img {
-  max-width: 100%;
+/* Зовнішній контейнер */
+.wrapper {
+  max-width: 980px;
+  margin: 15px auto 30px auto;
+  background: #fbf5eb;
+  border: 1px solid #d5be9b;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(80, 50, 20, 0.15);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Верхня біла плашка */
+.top-header {
+  background: #ffffff;
+  padding: 12px 25px 12px 140px;
+  position: relative;
+  min-height: 65px;
+  border-bottom: 1px solid #ebd9c0;
+}
+
+/* Звисаючий зелений бейдж із деревом */
+.tree-badge {
+  position: absolute;
+  top: 0;
+  left: 25px;
+  width: 90px;
+  background: #b5c777;
+  padding: 4px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.25);
+  text-align: center;
+  z-index: 10;
+}
+
+.tree-badge img {
+  width: 100%;
+  height: auto;
   display: block;
 }
 
-.wrapper {
-  max-width: 1040px;
-  margin: 15px auto;
-  background: #ffffff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-  border: 1px solid #c8d8e4;
-}
-
-header {
-  background: linear-gradient(180deg, #1d69a6 0%, #104e80 100%);
-  color: white;
-  padding: 20px 25px;
-  border-bottom: 3px solid #0b375b;
-}
-
-.site-title {
-  font-size: 26px;
+.clinic-title {
+  text-align: right;
+  font-size: 15px;
+  font-style: italic;
   font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
+  color: #2a8742;
 }
 
-.site-subtitle {
-  font-size: 16px;
-  color: #d8ecf8;
-  margin-top: 5px;
+.clinic-domain {
+  text-align: right;
+  font-size: 13px;
+  font-style: italic;
+  margin-top: 3px;
 }
 
+.clinic-domain a {
+  color: #1742a6;
+  text-decoration: none;
+}
+
+/* Великий банер природи */
+.hero-banner {
+  margin: 12px 15px 4px 15px;
+  border: 1px solid #c9b493;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.hero-banner img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Рядок пошуку */
+.search-strip {
+  display: flex;
+  justify-content: flex-end;
+  padding: 4px 15px 12px 15px;
+}
+
+.search-strip input {
+  padding: 3px 6px;
+  border: 1px solid #bda380;
+  background: #ffffff;
+  font-size: 11px;
+  width: 140px;
+}
+
+.search-strip button {
+  background: #a98d64;
+  color: #ffffff;
+  border: none;
+  padding: 3px 12px;
+  font-size: 11px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 2px;
+}
+
+@media (max-width: 800px) {
+  .top-header {
+    padding-left: 105px;
+  }
+  .tree-badge {
+    width: 75px;
+    left: 10px;
+  }
+  .clinic-title {
+    font-size: 13px;
+  }
+  .hero-banner img {
+    height: 140px;
+  }
+}
+
+/* Лейаут з 2 колонок */
 .main-container {
   display: flex;
   flex-direction: row;
-  min-height: 600px;
+  border-top: 1px solid #e2cfb7;
+  background-color: #fbf5eb;
 }
 
+/* Лівий сайдбар */
 .sidebar {
-  width: 240px;
-  background-color: #f4f8fb;
-  border-right: 1px solid #d9e6f0;
-  padding: 15px 10px;
+  width: 220px;
   flex-shrink: 0;
+  padding: 15px 12px;
+  border-right: 1px solid #e5d3bc;
 }
 
 .block-title {
-  background: #2b78b5;
-  color: white;
-  padding: 8px 12px;
-  font-size: 13px;
+  color: #5c2818;
+  font-size: 14px;
   font-weight: bold;
-  text-transform: uppercase;
   margin-bottom: 8px;
-  border-radius: 2px;
+  border-bottom: 1px solid #dfcbb3;
+  padding-bottom: 4px;
 }
 
 .nav-menu {
   list-style: none;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 
 .nav-menu li {
-  border-bottom: 1px dotted #ccc;
+  margin-bottom: 5px;
+  font-size: 12px;
 }
 
 .nav-menu a {
-  display: block;
-  padding: 8px 10px;
-  color: #174e7c;
+  color: #633216;
   text-decoration: none;
-  font-weight: bold;
-}
-
-.nav-menu a:hover,
-.nav-menu a.active {
-  background-color: #e2eef7;
-  color: #c0392b;
-}
-
-.price-box {
-  background: #fff8e7;
-  border: 1px solid #ecd8ab;
-  padding: 12px;
-  margin-bottom: 20px;
-  font-size: 13px;
-}
-
-.price-item {
-  margin-bottom: 8px;
-  border-bottom: 1px dashed #d5c49b;
-  padding-bottom: 4px;
-}
-
-.price-item span {
   display: block;
+  padding: 3px 0 3px 12px;
+  position: relative;
+}
+
+.nav-menu a::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #a34827;
+  font-size: 14px;
+}
+
+.nav-menu a:hover, .nav-menu a.active {
+  color: #a32213;
   font-weight: bold;
-  color: #b33922;
 }
 
-.doctor-badge {
-  background: #eef7ee;
-  border: 1px solid #cce5cc;
-  padding: 12px;
-  margin-bottom: 20px;
+/* Контактні плашки сайдбару */
+.contacts-box, .banner-box {
+  background: #fdfaf5;
+  border: 1px solid #e5d4be;
+  padding: 10px;
+  margin-bottom: 18px;
+  font-size: 11.5px;
+  line-height: 1.45;
 }
 
-.doctor-badge strong {
-  color: #1d6928;
+.contacts-box strong {
+  color: #7a1b0b;
 }
 
-.phone-link {
-  display: inline-block;
-  font-size: 15px;
+.contacts-box a {
+  color: #113f99;
   font-weight: bold;
-  color: #104e80;
   text-decoration: none;
-  margin-top: 3px;
 }
 
+.banner-box {
+  border-left: 3px solid #9c2e17;
+  font-size: 11px;
+}
+
+.banner-box .warn-title {
+  color: #8c1e08;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+/* Контентна частина */
 .content {
   flex: 1;
-  padding: 25px 30px;
+  padding: 18px 25px;
+  background-color: #fbf5eb;
 }
 
 .content h1 {
-  font-size: 22px;
-  color: #174e7c;
+  font-size: 18px;
+  color: #592515;
   margin-bottom: 15px;
-  border-bottom: 2px solid #e2eef7;
+  border-bottom: 1px solid #dfcbb3;
   padding-bottom: 6px;
+  text-transform: uppercase;
 }
 
 .content h2 {
-  font-size: 17px;
-  color: #2b78b5;
-  margin: 18px 0 10px 0;
+  font-size: 15px;
+  color: #7a2211;
+  margin: 18px 0 8px 0;
 }
 
 .content p {
@@ -157,85 +245,58 @@ header {
   text-align: justify;
 }
 
-.content ul,
-.content ol {
-  margin-left: 20px;
+.content ul, .content ol {
+  margin-left: 22px;
   margin-bottom: 15px;
 }
 
 .content li {
-  margin-bottom: 6px;
+  margin-bottom: 5px;
 }
 
+/* Футер */
+footer {
+  background-color: #eeddc5;
+  padding: 15px 20px;
+  font-size: 11.5px;
+  color: #634531;
+  border-top: 1px solid #d5be9b;
+  display: flex;
+  justify-content: space-between;
+  line-height: 1.4;
+}
+
+/* Галерея */
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 15px;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
-.gallery-item {
-  border: 1px solid #d7e5ef;
-  background: linear-gradient(135deg, #edf6ff, #f7fbff);
-  overflow: hidden;
-}
-
-.gallery-item img {
+.gallery-grid img {
   width: 100%;
-  height: 180px;
+  height: 220px;
   object-fit: cover;
-  display: block;
-}
-
-.contact-list {
-  list-style: none;
-  margin: 0 0 20px 0;
-  line-height: 1.8;
-}
-
-.contact-list strong {
-  color: #174e7c;
-}
-
-.contact-list a {
-  color: #174e7c;
-  text-decoration: none;
-}
-
-.map-container {
-  margin-top: 20px;
-  border: 1px solid #d7e5ef;
-  background: #f8fbff;
-  padding: 10px;
-}
-
-.map-iframe {
-  width: 100%;
-  height: 320px;
-  border: 0;
-  display: block;
-}
-
-footer {
-  background-color: #243342;
-  color: #bdc3c7;
-  padding: 15px 25px;
-  font-size: 12px;
-  border-top: 2px solid #1a252f;
+  border: 1px solid #c9b493;
+  padding: 3px;
+  background: #fff;
 }
 
 @media (max-width: 800px) {
   .main-container {
     flex-direction: column;
   }
-
   .sidebar {
     width: 100%;
     border-right: none;
-    border-bottom: 1px solid #d9e6f0;
+    border-bottom: 1px solid #e5d3bc;
   }
-
-  .content {
-    padding: 15px;
+  .top-header {
+    padding-left: 110px;
+  }
+  .tree-badge {
+    left: 10px;
+    width: 80px;
   }
 }
